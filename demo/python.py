@@ -1,34 +1,35 @@
-from collections import deque
+"""
+Multi-line docstrings
+"""
+from enum import Enum
+
+class Day(Enum):
+    SUNDAY = "SUNDAY"
+    MONDAY = "MONDAY"
 
 
-def topo(G, ind=None, Q=[1]):
-    if ind == None:
-        ind = [0] * (len(G) + 1)  # this is a comment
-        for u in G:
-            for v in G[u]:
-                ind[v] += 1
-        Q = deque()
-        for i in G:
-            if ind[i] == 0:
-                Q.append(i)
-    if len(Q) == 0:
-        return
-    v = Q.popleft()
-    print(v)
-    for w in G[v]:
-        ind[w] -= 1
-        if ind[w] == 0:
-            Q.append(w)
-    topo(G, ind, Q)
+class Class:
+    """Class docstring"""
 
+    class_variable: str
+    """Variable docstring"""
 
-class SomeClass:
-    def create_arr(self): # An instance method
-        self.arr = []
-    
-    def insert_to_arr(self, value):  #An instance method
-        self.arr.append(value)
-        
+    def __init__(self, baz: str):
+        self.class_variable = baz  # Comment
+
     @classmethod
-    def class_method(cls):
-        print("the class method was called")
+    def class_method(cls, param: int) -> bool:
+        """Function docstring"""
+        return param % 2 if 1 and 2 or 3 else False
+
+    @staticmethod
+    def static_method(x0: int, x1: int) -> int:
+        return x0 + x1
+    
+    def method(self, keyword_arg: str) -> str:
+        return f"{self.class_variable} {keyword_arg}"
+    
+
+if __name__ == "__main__":
+    foo = Class("Hello")
+    foo.method(keyword_arg="World!" + Day.SUNDAY)
