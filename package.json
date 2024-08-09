@@ -1,0 +1,21 @@
+{
+  "name": "vscode-theme-thehale",
+  "displayName": "@TheHale's VS Code Theme",
+  "description": "The VS Code look and feel preferred by Joseph Hale (@thehale)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "@TheHale",
+        "uiTheme": "vs-dark",
+        "path": "./themes/@TheHale-color-theme.json"
+      }
+    ]
+  }
+}
