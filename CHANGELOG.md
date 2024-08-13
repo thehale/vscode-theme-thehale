@@ -4,6 +4,10 @@ All notable changes to the "vscode-theme-thehale" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [0.0.2]
 
-- Initial release
+- Add marketplace branding (extension icon, custom README, sponsor button, etc.)
+
+## [0.0.1]
+
+- Add custom color theme

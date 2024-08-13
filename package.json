@@ -1,8 +1,14 @@
 {
   "name": "vscode-theme-thehale",
+	"publisher": "thehale",
+	"repository": "https://github.com/thehale/vscode-theme-thehale",
   "displayName": "@TheHale's VS Code Theme",
   "description": "The VS Code look and feel preferred by Joseph Hale (@thehale)",
-  "version": "0.0.1",
+  "version": "0.0.2",
+	"icon": "docs/images/icon.png",
+	"sponsor": {
+		"url": "https://github.com/sponsors/thehale"
+	},
   "engines": {
     "vscode": "^1.92.0"
   },
@@ -17,5 +23,12 @@
         "path": "./themes/@TheHale-color-theme.json"
       }
     ]
+  },
+  "scripts": {
+    "build": "vsce package",
+		"publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.31.1"
   }
 }
