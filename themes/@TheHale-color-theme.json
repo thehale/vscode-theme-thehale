@@ -822,12 +822,10 @@
             "foreground": "#0692f0",
             "fontStyle": "italic"
         },
-        "annotation": "#AFC367",
         "class": {
             "foreground": "#0692f0",
             "fontStyle": "bold"
         },
-        "class.decorator": "#AFC367",
         "interface": "#3C9CFF",
         "enum": {
             "foreground": "#0692f0",
@@ -844,10 +842,6 @@
         "function.static": {
             "foreground": "#02d421",
             "fontStyle": "italic"
-        },
-        "function.decorator": {
-            "foreground": "#AFC367",
-            "fontStyle": ""
         },
         "magicFunction": {
             "foreground": "#BA68C8",
@@ -866,7 +860,6 @@
             "fontStyle": "italic"
         },
         "variable": "#BAB995",
-        "variable.decorator": "#AFC367",
         "parameter": "#C6B800",
         "parameter.documentation": {
             "foreground": "#EC407A",
@@ -887,7 +880,16 @@
         "clsParameter": {
             "foreground": "#BA68C8",
             "fontStyle": ""
-        }
+        },
+        // <Decorators>
+        "annotation": "#AFC367",
+        "class.decorator": "#AFC367",
+        "variable.decorator": "#AFC367",
+        "function.decorator": {
+            "foreground": "#AFC367",
+            "fontStyle": ""
+        },
+        // </Decorators>
     },
 	"tokenColors": [
 		{
@@ -1533,13 +1535,6 @@
 			}
 		},
 		{
-			"scope": "entity.name.function.decorator",
-			"settings": {
-				"foreground": "#AFC367",
-				"fontStyle": ""
-			}
-		},
-		{
 			"scope": "entity.name.type",
 			"settings": {
 				"foreground": "#BA68C8",
@@ -1590,13 +1585,6 @@
 			"scope": "storage.type.primitive.java",
 			"settings": {
 				"foreground": "#CC7832",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "punctuation.definition.annotation.java",
-			"settings": {
-				"foreground": "#AFC367",
 				"fontStyle": ""
 			}
 		},
@@ -1744,6 +1732,18 @@
 			"settings": {
 				"foreground": "#B267E6"
 			}
-		}
+		},
+        // <Decorators>
+		{
+			"scope": [
+                "entity.name.function.decorator",
+                "punctuation.definition.annotation.java"
+            ],
+			"settings": {
+				"foreground": "#AFC367",
+				"fontStyle": ""
+			}
+		},
+        // </Decorators>
 	],
 }
