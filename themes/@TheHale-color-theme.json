@@ -809,88 +809,101 @@
 		//"window.activeBorder": null,
 		//"window.inactiveBorder": null
 	},
-    "semanticHighlighting": true,
-    "semanticTokenColors": {
-        "keyword": "#CC7832",
-        "keyword.documentation": {
-            "foreground": "#808080",
-            "fontStyle": "bold"
-        },
-        "comment": "#EC407A",
-        "string": "#a571ff",
-        "namespace": {
-            "foreground": "#0692f0",
-            "fontStyle": "italic"
-        },
-        "class": {
-            "foreground": "#0692f0",
-            "fontStyle": "bold"
-        },
-        "interface": "#3C9CFF",
-        "enum": {
-            "foreground": "#0692f0",
-            "fontStyle": "italic bold"
-        },
-        "enumMember": {
-            "foreground": "#4BD5F8",
-            "fontStyle": "italic bold"
-        },
-        "function": {
-            "foreground": "#02d421",
-            "fontStyle": ""
-        },
-        "function.static": {
-            "foreground": "#02d421",
-            "fontStyle": "italic"
-        },
-        "magicFunction": {
-            "foreground": "#BA68C8",
-            "fontStyle": ""
-        },
-        "intrinsic": {
-            "foreground": "#BA68C8",
-            "fontStyle": ""
-        },
-        "method": {
-            "foreground": "#02d421",
-            "fontStyle": ""
-        },
-        "method.static": {
-            "foreground": "#02d421",
-            "fontStyle": "italic"
-        },
-        "variable": "#BAB995",
-        "parameter": "#C6B800",
-        "parameter.documentation": {
-            "foreground": "#EC407A",
-            "fontStyle": "italic"
-        },
-        "property": {
-            "foreground": "#4BD5F8",
-            "fontStyle": ""
-        },
-        "property.static": {
-            "foreground": "#4BD5F8",
-            "fontStyle": "italic"
-        },
-        "selfParameter": {
-            "foreground": "#BA68C8",
-            "fontStyle": ""
-        },
-        "clsParameter": {
-            "foreground": "#BA68C8",
-            "fontStyle": ""
-        },
-        // <Decorators>
-        "annotation": "#AFC367",
-        "class.decorator": "#AFC367",
-        "variable.decorator": "#AFC367",
-        "function.decorator": {
-            "foreground": "#AFC367",
-            "fontStyle": ""
-        },
-        // </Decorators>
-    },
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"keyword.documentation": {
+			"foreground": "#808080",
+			"fontStyle": "bold"
+		},
+		"comment": "#EC407A",
+		"string": "#a571ff",
+		"namespace": {
+			"foreground": "#0692f0",
+			"fontStyle": "italic"
+		},
+		"interface": "#3C9CFF",
+		"enum": {
+			"foreground": "#0692f0",
+			"fontStyle": "italic bold"
+		},
+		"enumMember": {
+			"foreground": "#4BD5F8",
+			"fontStyle": "italic bold"
+		},
+		"parameter.documentation": {
+			"foreground": "#EC407A",
+			"fontStyle": "italic"
+		},
+		// Keywords
+		"keyword": "#CC7832",
+		// Decorators
+		"annotation": "#AFC367",
+		"class.decorator": "#AFC367",
+		"variable.decorator": "#AFC367",
+		"function.decorator": {
+			"foreground": "#AFC367",
+			"fontStyle": ""
+		},
+		// Classes
+		"class": {
+			"foreground": "#0692f0",
+			"fontStyle": "bold"
+		},
+		// Class Variables (Static)
+		"property.static": {
+			"foreground": "#4BD5F8",
+			"fontStyle": "italic"
+		},
+		// Class Variables (Instance)
+		"property": {
+			"foreground": "#4BD5F8",
+			"fontStyle": ""
+		},
+		// Function Variables / Method Variables
+		"parameter": "#C6B800",
+		// Local Variables
+		"variable": "#BAB995",
+		// self, this Variables
+		"variable.default_library:ruby": {
+			"foreground": "#BA68C8",
+			"fontStyle": "bold italic"
+		},
+		"selfParameter": {
+			"foreground": "#BA68C8",
+			"fontStyle": "bold italic"
+		},
+		"clsParameter": {
+			"foreground": "#BA68C8",
+			"fontStyle": "bold italic"
+		},
+		// Function Definition/Call (Static)
+		"method.static": {
+			"foreground": "#02d421",
+			"fontStyle": "italic"
+		},
+		"function.static": {
+			"foreground": "#02d421",
+			"fontStyle": "italic"
+		},
+		// Function Definition/Call (Standalone, Instance)
+		"method": {
+			"foreground": "#02d421",
+			"fontStyle": ""
+		},
+		"function": {
+			"foreground": "#02d421",
+			"fontStyle": ""
+		},
+		// Function Definition/Call (Magic)
+		"magicFunction": {
+			"foreground": "#BA68C8",
+			"fontStyle": ""
+		},
+		"intrinsic": {
+			"foreground": "#BA68C8",
+			"fontStyle": ""
+		},
+	},
 	"tokenColors": [
 		{
 			"scope": [
@@ -1462,82 +1475,9 @@
 			}
 		},
 		{
-			"scope": "keyword - keyword.operator",
-			"settings": {
-				"foreground": "#CC7832"
-			}
-		},
-		{
-			"scope": "keyword.control",
-			"settings": {
-				"foreground": "#CC7832"
-			}
-		},
-		{
-			"scope": "storage",
-			"settings": {
-				"foreground": "#CC7832"
-			}
-		},
-		{
-			"scope": "storage.type",
-			"settings": {
-				"foreground": "#CC7832"
-			}
-		},
-		{
-			"scope": "keyword",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "keyword.operator",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "meta.class.identifer",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "variable.language",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "constant.language",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": "italic"
-			}
-		},
-		{
-			"scope": "storage.modifier",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": ""
-			}
-		},
-		{
 			"scope": "entity.name.tag",
 			"settings": {
 				"foreground": "#0692F0",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "entity.name.type",
-			"settings": {
-				"foreground": "#BA68C8",
 				"fontStyle": ""
 			}
 		},
@@ -1546,66 +1486,6 @@
 			"settings": {
 				"foreground": "#EC407A",
 				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "source.groovy",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "meta.function-call.groovy",
-			"settings": {
-				"foreground": "#02D421"
-			}
-		},
-		{
-			"scope": "meta.method-call.groovy",
-			"settings": {
-				"foreground": "#02D421"
-			}
-		},
-		{
-			"scope": "variable.language.this.java",
-			"settings": {
-				"foreground": "#BA68C8",
-				"fontStyle": "italic bold"
-			}
-		},
-		{
-			"scope": "keyword.operator.instanceof.java",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "storage.type.primitive.java",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "keyword.operator.logical.python",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "variable.parameter.function-call.python",
-			"settings": {
-				"foreground": "#E74C3C",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "meta.function-call.generic.python",
-			"settings": {
-				"foreground": "#02D421"
 			}
 		},
 		{
@@ -1640,48 +1520,6 @@
 			"scope": "string.comment",
 			"settings": {
 				"foreground": "#EC407A",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "entity.other.attribute-name",
-			"settings": {
-				"foreground": "#E74C3C",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "variable",
-			"settings": {
-				"foreground": "#BAB995",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "variable.parameter",
-			"settings": {
-				"foreground": "#C6B800",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "meta.object.member",
-			"settings": {
-				"foreground": "#4BD5F8",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "meta.object-literal.key",
-			"settings": {
-				"foreground": "#E74C3C",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "entity.name.function",
-			"settings": {
-				"foreground": "#02D421",
 				"fontStyle": ""
 			}
 		},
@@ -1733,20 +1571,150 @@
 				"foreground": "#B267E6"
 			}
 		},
-        // <Decorators>
+		// Keywords
 		{
 			"scope": [
-                "entity.name.function.decorator",
-                "support.type.python",
-                "meta.function.decorator",
-                "meta.function.decorator.python",
-                "punctuation.definition.annotation.java"
-            ],
+				"constant.language",
+				"keyword - keyword.operator",
+				"keyword.control",
+				"keyword.operator.instanceof.java",
+				"keyword.operator.logical.python",
+				"keyword.operator",
+				"keyword",
+				"meta.class.identifer",
+				"punctuation.separator.inheritance.ruby",
+				"punctuation.separator.namespace.ruby",
+				"source.groovy",
+				"storage.modifier",
+				"storage.type.primitive.java",
+				"storage.type",
+				"storage",
+				"variable.language",
+			],
+			"settings": {
+				"foreground": "#CC7832",
+				"fontStyle": ""
+			}
+		},
+		// Decorators
+		{
+			"scope": [
+				"entity.name.function.decorator",
+				"meta.function.decorator.python",
+				"meta.function.decorator",
+				"punctuation.definition.annotation.java",
+				"support.type.python",
+			],
 			"settings": {
 				"foreground": "#AFC367",
 				"fontStyle": ""
 			}
 		},
-        // </Decorators>
+		// Classes
+		{
+			"scope": [
+				"entity.name.type.class",
+				"entity.other.inherited-class",
+				"meta.class",
+				"support.class.ruby"
+			],
+			"settings": {
+				"foreground": "#0692f0",
+				"fontStyle": "bold"
+			}
+		},
+		// Class Variables (Static)
+		//   - n/a
+		// Class Variables (Instance)
+		{
+			"scope": [
+				"meta.object.member",
+				"meta.member"
+			],
+			"settings": {
+				"foreground": "#4BD5F8",
+				"fontStyle": ""
+			}
+		},
+		// Function Variables / Method Variables
+		{
+			"scope": [
+				"variable.parameter",
+				"variable.other.block.ruby"
+			],
+			"settings": {
+				"foreground": "#C6B800",
+				"fontStyle": ""
+			}
+		},
+		// Function Variables / Method Variables [Named]
+		{
+			"scope": [
+				"variable.parameter.function-call.python",
+				"entity.other.attribute-name",
+				"constant.language.symbol.ruby"
+			],
+			"settings": {
+				"foreground": "#E74C3C",
+				"fontStyle": ""
+			}
+		},
+		// Local Variables
+		{
+			"scope": "variable",
+			"settings": {
+				"foreground": "#BAB995",
+				"fontStyle": ""
+			}
+		},
+		// self, this Variables
+		{
+			"scope": [
+				"entity.name.type",
+				"variable.language.this.java",
+				"variable.language.self.ruby",
+			],
+			"settings": {
+				"foreground": "#BA68C8",
+				"fontStyle": "italic bold"
+			}
+		},
+		// Keys (Dictionary, Hash, etc.)
+		{
+			"scope": [
+				"meta.object-literal.key",
+				"constant.language.symbol.hashkey.ruby",
+			],
+			"settings": {
+				"foreground": "#E74C3C",
+				"fontStyle": ""
+			}
+		},
+		// Function Definition/Call (Static)
+		//   - n/a
+		// Function Definition/Call (Standalone, Instance)
+		{
+			"scope": [
+				"meta.function-call.groovy",
+				"meta.method-call.groovy",
+				"meta.function-call.generic.python",
+				"entity.name.function",
+			],
+			"settings": {
+				"foreground": "#02D421",
+				"fontStyle": ""
+			}
+		},
+		// Function Definition/Call (Magic)
+		{
+			"scope": [
+				"support.function.kernel.ruby",
+				// "support.function.magic.python",
+			],
+			"settings": {
+				"foreground": "#02D421",
+				"fontStyle": "underline"
+			}
+		},
 	],
 }
