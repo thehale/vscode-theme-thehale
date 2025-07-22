@@ -1737,6 +1737,9 @@
 		{
 			"scope": [
                 "entity.name.function.decorator",
+                "support.type.python",
+                "meta.function.decorator",
+                "meta.function.decorator.python",
                 "punctuation.definition.annotation.java"
             ],
 			"settings": {
