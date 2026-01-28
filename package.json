@@ -10,6 +10,7 @@
     "url": "https://github.com/sponsors/thehale"
   },
   "engines": {
+    "node": ">=20 <25",
     "vscode": "^1.92.0"
   },
   "categories": [
